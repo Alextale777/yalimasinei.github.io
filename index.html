@@ -8,10 +8,12 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="苟利国家生死以，岂因祸福避趋之">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="苟利国家生死以，岂因祸福避趋之">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="qxc">
 <meta name="twitter:card" content="summary">
@@ -152,20 +154,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-qxc-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-翻译模式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/11/qxc-blog/">qxc-blog</a>
+      <a class="article-title" href="/2020/08/13/%E7%BF%BB%E8%AF%91%E6%A8%A1%E5%BC%8F/">翻译模式</a>
     </h1>
   
 
         
-        <a href="/2020/07/11/qxc-blog/" class="archive-article-date">
-  	<time datetime="2020-07-11T09:35:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-11</time>
+        <a href="/2020/08/13/%E7%BF%BB%E8%AF%91%E6%A8%A1%E5%BC%8F/" class="archive-article-date">
+  	<time datetime="2020-08-13T13:41:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-13</time>
 </a>
         
       </header>
@@ -184,7 +186,211 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/11/qxc-blog/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/08/13/%E7%BF%BB%E8%AF%91%E6%A8%A1%E5%BC%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-关于java的一些问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/30/%E5%85%B3%E4%BA%8Ejava%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/">关于java的一些问题</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/30/%E5%85%B3%E4%BA%8Ejava%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2020-07-30T06:21:13.730Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="关于Java的问题"><a href="#关于Java的问题" class="headerlink" title="关于Java的问题"></a>关于Java的问题</h1><h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><p>​    </p>
+<p>​             static 成员方法、成员变量 ， 用 类名.fun()调用，如果是本类静态方法则直接调用</p>
+<p>​            <em>静态只能访问静态</em> （静态不能访问非静态），因为内存中现有静态后有非静态</p>
+<p>​            <em>静态方法中不能用this</em>,因为this是当前对象，通过谁调用的方法谁就是当前对象，（静态不用对象调用）</p>
+<p>​     </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//当第一次用到此类，静态代码块执行唯一一次</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">nameOfClass</span></span>&#123;</span><br><span class="line">    <span class="keyword">static</span>&#123;</span><br><span class="line">        <span class="comment">//静态代码块内容</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="继承与派生"><a href="#继承与派生" class="headerlink" title="继承与派生"></a>继承与派生</h3><p>直接通过子类对象访问成员变量：左边是谁，优先用谁，没有则向上走（父类）；</p>
+<p>间接通过子类对象访问成员变量：方法是哪个类的优先用哪个类，没有向上寻找</p>
+<p><em>方法覆盖重写注意事项</em>：</p>
+<ol>
+<li>保证父子类之间方法名称相同，参数列表也相同。</li>
+<li>子类方法返回值必须小于等于父类方法的返回值范围（如：String∈Object）</li>
+<li>子类方法的权限必须大于等于父类方法的权限修饰符（public&gt;protect&gt;default&gt;private）</li>
+</ol>
+<p><strong>java.lang.Object类是所有类的公共最高父类。</strong></p>
+<ol>
+<li>子类构造方法当中默认隐含一个super()调用</li>
+<li>可以通过super调用父类重载构造。</li>
+<li>只有子类构造方法才能调用父类构造方法，super要放在第一句，且只能有一句。</li>
+</ol>
+<h2 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h2><h3 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h3><p>定义： 修饰符 class 类名{</p>
+<p>​    修饰符 class 类名{</p>
+<p>​    }</p>
+<p>}</p>
+<p>内部类随意访问外部类成员</p>
+<p>外部类需要内部类对象访问内部类</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/30/%E5%85%B3%E4%BA%8Ejava%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-自上而下分析法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/28/%E8%87%AA%E4%B8%8A%E8%80%8C%E4%B8%8B%E5%88%86%E6%9E%90%E6%B3%95/">自上而下分析法</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/28/%E8%87%AA%E4%B8%8A%E8%80%8C%E4%B8%8B%E5%88%86%E6%9E%90%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2020-07-28T05:05:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="消除回溯"><a href="#消除回溯" class="headerlink" title="消除回溯"></a>消除回溯</h2><h3 id="FIRST-set-终结首符集"><a href="#FIRST-set-终结首符集" class="headerlink" title="FIRST set(终结首符集)"></a>FIRST set(终结首符集)</h3><blockquote>
+<p>FIRST(α)={α|α=*&gt;a…, a∈Vt}     </p>
+</blockquote>
+<blockquote>
+<p> 若α=*&gt;ε ， 则规定ε∈FIRST(α)。</p>
+</blockquote>
+<ul>
+<li><p><strong>FIRST集的构造方法</strong></p>
+<blockquote>
+<p><code>If x is a terminal, then FIRST(x) = { ‘x’ }</code></p>
+</blockquote>
+<blockquote>
+<p><code>If x-&gt; Є, is a production rule, then add Є to FIRST(x).</code></p>
+</blockquote>
+<blockquote>
+<p><code>If X-&gt;Y1 Y2 Y3….Yn is a production,</code></p>
+</blockquote>
+<blockquote>
+<ol>
+<li><p>FIRST(X) = FIRST(Y1)</p>
+</li>
+<li><p>If FIRST(Y1) contains Є then FIRST(X) = { FIRST(Y1) – Є } U { FIRST(Y2) }</p>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>If FIRST (Yi) contains Є for all i = 1 to n, then add Є to FIRST(X).</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h3 id="FOLLOW"><a href="#FOLLOW" class="headerlink" title="FOLLOW"></a>FOLLOW</h3><p><strong>FOLLOW（A）={a|S=*&gt;…Aa…, a∈VT}</strong></p>
+<p>特别是，若S=*&gt;…A, 规定#∈FOLLOW(A)</p>
+<ul>
+<li><p><strong>FOLLOW 集的构造方法</strong></p>
+<blockquote>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FOLLOW(S) &#x3D; &#123; $ &#125;   &#x2F;&#x2F; where S is the starting Non-Terminal</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">If A -&gt; pBq is a production, where p, B and q are any grammar symbols,</span><br><span class="line">then everything in FIRST(q)  except Є is in FOLLOW(B).</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">If A-&gt;pB is a production, then everything in FOLLOW(A) is in FOLLOW(B).</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">If A-&gt;pBq is a production and FIRST(q) contains Є, </span><br><span class="line">then FOLLOW(B) contains &#123; FIRST(q) – Є &#125; U FOLLOW(A) </span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+        
+          <a class="article-more-a" href="/2020/07/28/%E8%87%AA%E4%B8%8A%E8%80%8C%E4%B8%8B%E5%88%86%E6%9E%90%E6%B3%95/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/28/%E8%87%AA%E4%B8%8A%E8%80%8C%E4%B8%8B%E5%88%86%E6%9E%90%E6%B3%95/">展开全文 >></a>
         </p>
       
 
